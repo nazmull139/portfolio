@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="w-full">
+        <div
+          class="border border-white gap-2 rounded-full w-[80%] lg:w-[70%] mx-auto mt-6 shadow-lg flex justify-between items-center p-4"
+        >
+          <!--Navbar Left -->
+          <div
+            class="flex items-center gap-2 md:gap-4 justify-center text-center"
+          >
+            <img src="./images/my-image2.jfif" class="h-16 w-16 rounded-full" />
+            <p class="font-semibold">Mohammad Nazmul</p>
+          </div>
+          <!--Navbar Right -->
+          <div class=" ">
+            <ul class="hidden md:flex gap-8 font-semibold pr-4">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#resume" class="nav-link">Resume</a></li>
+
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+              <li
+                id="mode"
+                class="border border-gray-500 shadow-lg rounded-full p-2 text-white"
+              >
+                <img id="modeIcon" src="./images/moon.png" class="w-6" />
+              </li>
+            </ul>
+
+            <button
+              id="menu-btn"
+              class="md:hidden text-gray-700 focus:outline-none text-3xl"
+            >
+              ☰
+            </button>
+          </div>
+          <div
+            id="mobile-menu"
+            class="fixed top-0 right-0 w-64 h-full bg-white shadow-xl translate-x-full transition-transform duration-300 flex flex-col items-end p-4 z-50 pointer-events-none"
+          >
+            <p
+              id="x-btn"
+              class="border bg-gray-800 text-red-400 rounded-full w-10 h-10 flex justify-center items-center"
+            >
+              X
+            </p>
+
+            <ul
+              class="flex flex-col space-y-4 py-4 px-6   font-medium items-center gap-4 w-full"
+            >
+              <li><a href="#home">About</a></li>
+              <li><a href="#about">Resume</a></li>
+
+              <li><a href="#contact">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li
+                id="mode2"
+                class="border border-gray-500 shadow-lg rounded-full p-2 text-white"
+              >
+                <img id="modeIcon2" src="./images/moon.png" class="w-6" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="mt-5 p-5">
+      <div class="flex flex-col justify-center items-center relative">
+        <img src="/images/my-image2.jfif" class="rounded-full" />
+        <p class="font-semibold mt-2 mb-2">Mohammad Nazmul</p>
+        <p class="text-xl">Full Stack Web Developer</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="w-[80%] py-16 mx-auto">
+      <div class="mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-5">My Skills</h2>
+        <hr class="w-50 sm:w-64 mx-auto border border-gray-500 mb-8" />
+
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">HTML</h3>
+              <p>90%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">CSS</h3>
+              <p>90%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-md font-semibold mb-2">Tailwindcss</h3>
+              <p>85%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">JavaScript</h3>
+              <p>80%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">React.js</h3>
+              <p>80%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">Next.js</h3>
+              <p>70%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 70%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">Node.js</h3>
+              <p>70%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 70%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">Express.js</h3>
+              <p>65%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 65%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">MongoDB</h3>
+              <p>70%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 70%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-lg font-semibold mb-2">GitHub</h3>
+              <p>90%</p>
+            </div>
+
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Project Section-->
+
+    <section id="projects" class="w-[80%] mx-auto py-16">
+      <div class="mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-5">My Projects</h2>
+        <hr
+          class="w-50 sm:w-64 mx-auto text-black border border-gray-500 mb-8"
+        />
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div
+            class="border border-white flex flex-col gap-1 justify-between rounded-lg shadow-lg p-4"
+          >
+            <img src="/images/hospital.png" />
+
+            <div class="gap-2 flex flex-col">
+              <h2 class="font-semibold">MERN Hospital-Appointment</h2>
+              <p class="text-gray-600 text-md">
+                Full Stack Hospital Appointment Project
+              </p>
+              <a
+                href="https://hospital-frontend-steel.vercel.app/"
+                class="underline"
+                >Live link <i class="fi fi-rr-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="border border-white flex flex-col gap-1 justify-between rounded-lg shadow-lg p-4"
+          >
+            <img src="/images/E-com.png" />
+
+            <div class="gap-2 flex flex-col">
+              <h2 class="font-semibold">MERN E-commerce</h2>
+              <p class="text-gray-600 text-md">
+                Full Stack Mern E-commerce Project
+              </p>
+              <a href="https://mern-ecom-red.vercel.app/" class="underline"
+                >Live link <i class="fi fi-rr-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="border border-white flex flex-col gap-1 justify-between rounded-lg shadow-lg p-4"
+          >
+            <img src="/images/blog.png" />
+
+            <div class="gap-2 flex flex-col">
+              <h2 class="font-semibold">MERN Blog Web</h2>
+              <p class="text-gray-600 text-md">Full Stack Mern Blog Project</p>
+              <a href="https://blogger-two-phi.vercel.app/" class="underline"
+                >Live link <i class="fi fi-rr-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="border border-white flex flex-col gap-1 justify-between rounded-lg shadow-lg p-4"
+          >
+            <img src="/images/hospital.png" />
+
+            <div class="gap-2 flex flex-col">
+              <h2 class="font-semibold">MERN Hospital-Appointment</h2>
+              <p class="text-gray-600 text-md">
+                Full Stack Hospital Appointment Project
+              </p>
+              <a
+                href="https://hospital-frontend-steel.vercel.app/"
+                class="underline"
+                >Live link <i class="fi fi-rr-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="border border-white flex flex-col gap-1 justify-between rounded-lg shadow-lg p-4"
+          >
+            <img src="/images/E-com.png" />
+
+            <div class="gap-2 flex flex-col">
+              <h2 class="font-semibold">MERN E-commerce</h2>
+              <p class="text-gray-600 text-md">
+                Full Stack Mern E-commerce Project
+              </p>
+              <a href="https://mern-ecom-red.vercel.app/" class="underline"
+                >Live link <i class="fi fi-rr-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="border border-white flex flex-col gap-1 justify-between rounded-lg shadow-lg p-4"
+          >
+            <img src="/images/blog.png" />
+
+            <div class="gap-2 flex flex-col">
+              <h2 class="font-semibold">MERN Blog Web</h2>
+              <p class="text-gray-600 text-md">Full Stack Mern Blog Project</p>
+              <a href="https://blogger-two-phi.vercel.app/" class="underline"
+                >Live link <i class="fi fi-rr-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+
+    <section id="resume" class="py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-4 text-center">Resume</h2>
+
+        <hr
+          class="w-50 sm:w-64 mx-auto text-black border border-gray-500 mb-8"
+        />
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Experience</h3>
+
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold">Frontend Developer (Intern)</h4>
+              <p class="text-gray-600">XY Tech Company — 2024</p>
+              <p class="text-gray-700 mt-2">
+                Worked on building responsive UI components and improved website
+                performance using React, Tailwind CSS & modern frontend
+                practices.
+              </p>
+            </div>
+
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold">
+                Full Stack Developer (Freelance)
+              </h4>
+              <p class="text-gray-600">ABC Web Agency — 2023</p>
+              <p class="text-gray-700 mt-2">
+                Created dynamic websites and admin dashboards using MERN stack.
+                Integrated authentication, CRUD, and API connectivity.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Education</h3>
+
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold">
+                B.Sc in Computer Science & Engineering
+              </h4>
+              <p class="text-gray-600">Daffodil Institute of IT — 4th Year</p>
+              <p class="text-gray-700 mt-2">
+                Currently studying and building real-world projects using MERN,
+                Next.js, Tailwind, and modern full-stack tools.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-800">
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              HTML / CSS / Tailwind
+            </p>
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              JavaScript / ES6
+            </p>
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              React.js
+            </p>
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              Next.js
+            </p>
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              Node.js / Express.js
+            </p>
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              MongoDB
+            </p>
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              JWT Auth
+            </p>
+            <p class="bg-gray-100 p-3 rounded-lg text-center font-medium">
+              REST API Development
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+
+        <hr
+          class="w-50 sm:w-64 mx-auto text-black border border-gray-500 mb-8"
+        />
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              Send a Message
+            </h3>
+
+            <form action="#" method="POST" class="space-y-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+
+              <textarea
+                placeholder="Your Message"
+                rows="4"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="flex flex-col justify-center space-y-6 p-8 items-center">
+            <h3 class="text-xl font-semibold mb-4 border-b-2 border-black p-2">
+              Connect With Me
+            </h3>
+
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              class="flex items-center gap-3 justify-end w-full hover:text-blue-600 transition"
+            >
+              <span class="text-2xl"
+                ><img src="./images/communication.png" class="w-10" />
+              </span>
+              <span class="text-lg">Facebook</span>
+            </a>
+
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="flex items-center gap-3 w-full justify-start hover:text-blue-700 transition"
+            >
+              <span class="text-2xl"
+                ><img src="./images/linkedin.png" class="w-10"
+              /></span>
+              <span class="text-lg">LinkedIn</span>
+            </a>
+
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="flex items-center gap-3 justify-end w-full transition"
+            >
+              <span class="text-2xl"
+                ><img src="./images/github.png" class="w-10"
+              /></span>
+              <span class="text-lg">GitHub</span>
+            </a>
+
+            <a
+              href="https://wa.me/yourNumber"
+              target="_blank"
+              class="flex items-center gap-3 justify-start w-full hover:text-green-600 transition"
+            >
+              <span class="text-2xl"
+                ><img src="./images/whatsapp.png" class="w-10" />
+              </span>
+              <span class="text-lg">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-400 text-white py-4">
+      <div class="max-w-5xl mx-auto text-center">
+        <p>&copy; 2025 Mohammad Nazmul. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const xbtn = document.getElementById("x-btn");
+      const nightMode = document.getElementById("mode");
+      const nightMode2 = document.getElementById("mode2");
+      const modeIcon = document.getElementById("modeIcon");
+      const modeIcon2 = document.getElementById("modeIcon2");
+
+      btn.addEventListener("click", () => {
+        menu.classList.remove("translate-x-full");
+        menu.classList.add("translate-x-0");
+        menu.classList.remove("pointer-events-none");
+      });
+
+      xbtn.addEventListener("click", () => {
+        menu.classList.add("translate-x-full");
+        menu.classList.remove("translate-x-0");
+        menu.classList.add("pointer-events-none");
+      });
+
+      nightMode.addEventListener("click", () => {
+        document.body.classList.toggle("bg-black");
+        document.body.classList.toggle("text-white");
+        if (document.body.classList.contains("bg-black")) {
+          modeIcon.src = "./images/moon.png";
+        } else {
+          modeIcon.src = "./images/sun.png";
+        }
+      });
+      nightMode2.addEventListener("click", () => {
+        document.body.classList.toggle("bg-black");
+        document.body.classList.toggle("text-white");
+        menu.classList.toggle("bg-black");
+        menu.classList.toggle("text-white");
+        if (document.body.classList.contains("bg-black")) {
+          modeIcon2.src = "./images/moon.png";
+        } else {
+          modeIcon2.src = "./images/sun.png";
+        }
+      });
+    </script>
+  </body>
+</html>
